@@ -89,10 +89,11 @@ Error generating stack: `+o.message+`
     height: 4px;
     width: 10px;
     z-index: -1;
+    transition: all .4s;
   }
   
   &:after {
-    bottom: -4px;
+    top: -4px;
     background: #ffcd00;
     box-shadow: 0 0 1px #ffcd00;
     box-shadow: 0 0 2px #ffcd00;
@@ -101,7 +102,7 @@ Error generating stack: `+o.message+`
   }
   
   &:before {
-    top: -4px;
+    bottom: -4px;
     background: #f100dc;
     box-shadow: 0 0 1px #f100dc;
     box-shadow: 0 0 2px #f100dc;
@@ -112,11 +113,16 @@ Error generating stack: `+o.message+`
   &:hover:before,
   &:hover:after {
     height: 50%;
-    width: 80%;
+    width: 100%;
     transition-delay: .3s;
+    border-radius: 5px;
   }
   
   &:hover:before {
+    bottom: 0;
+  }
+  
+  &:hover:after {
     top: 0;
   }
 `,C0=()=>An(x0,{children:[b(qo,{href:"#",children:b(w0,{size:32,color:"white"})}),b(qo,{href:"#",children:b(S0,{size:32})}),b(qo,{href:"#",children:b(k0,{size:32})})]}),E0=a0`
